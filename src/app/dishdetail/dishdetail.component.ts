@@ -45,11 +45,12 @@ const DISH = {
 };
 
 @Component({
-  selector: 'app-dish-detail',
-  templateUrl: './dish-detail.component.html',
-  styleUrls: ['./dish-detail.component.scss']
+  selector: 'app-dishdetail',
+  templateUrl: './dishdetail.component.html',
+  styleUrls: ['./dishdetail.component.scss']
 })
-export class DishDetailComponent implements OnInit {
+export class DishdetailComponent implements OnInit {
+
 
   dish = DISH;
 
