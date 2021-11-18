@@ -9,6 +9,7 @@ import { Dish } from '../shared/dish';
 })
 export class DishdetailComponent implements OnInit {
 
+    // declare props
     @Input()
     dish: Dish;
 
