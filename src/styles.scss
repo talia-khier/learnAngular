@@ -33,6 +33,12 @@ $conFusion-theme: mat.define-light-theme((
 // that you are using.
 @include mat.all-component-themes($conFusion-theme);
 
+// import font awesome
+@import 'variables';
+@import '../node_modules/font-awesome/scss/font-awesome.scss';
+
+// import variables
+
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
@@ -40,4 +46,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .container {
   margin: 20px;
   display:flex;
+}
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+  margin: 0px auto;
+  padding: $pad-up-down $pad-left-right;
+}
+
+.background-primary {
+  background-color: $background-dark!important;
+}
+.background-accent {
+  background-color: $accent-color!important;
+}
+.text-floral-white {
+  color: floralwhite!important;
+}
+
+.flex-spacer {
+flex: 1 1 auto;
 }
