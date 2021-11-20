@@ -32,7 +32,7 @@
     <mat-list fxFlex>
         <h2>Comments</h2>
         <mat-list-item *ngFor="let comment of dish.comments">
-            <h3 matLine>{{comment.comment}}</h3>
+            <h3 matLine >{{comment.comment}}</h3>
             <h4 matLine>{{comment.rating}} Stars</h4>
             <p matLine>--{{comment.author}} {{comment.date | date : 'mediumDate'}} </p>
         </mat-list-item>
