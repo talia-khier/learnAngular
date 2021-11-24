@@ -18,12 +18,12 @@ export class DishdetailComponent implements OnInit {
 
   dish: Dish;
 
-  constructor(private dishservice: DishService,
+  constructor(private dishService: DishService,
     private route: ActivatedRoute,
     private location: Location) { }
 
   ngOnInit(): void {
-    this.dish = this.dishservice.getDish(
+    this.dish = this.dishService.getDish(
       this.route.snapshot.params['id']
     ) 
   }
